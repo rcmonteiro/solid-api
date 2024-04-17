@@ -69,3 +69,6 @@ Setup do projeto
   - docker compose up/down (create/delete)
   - docker compose start/stop
 - Create other models and run the migration
+- Setup Vitest
+  - npm install -D vitest vite-tsconfig-paths
+  - vite.config.ts
