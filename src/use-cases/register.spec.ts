@@ -27,7 +27,7 @@ describe('Register Use Case', () => {
   it('should not be able to register with same email twice', async () => {
     const registerUseCase = new RegisterUseCase(new InMemoryUsersRepository())
     await registerUseCase.execute(sampleUserInput)
-    expect(() =>
+    await expect(() =>
       registerUseCase.execute(sampleUserInput),
     ).rejects.toBeInstanceOf(UserAlreadyExistsError)
   })

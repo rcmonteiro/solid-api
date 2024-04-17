@@ -70,5 +70,5 @@ Setup do projeto
   - docker compose start/stop
 - Create other models and run the migration
 - Setup Vitest
-  - npm install -D vitest vite-tsconfig-paths
+  - npm install -D vitest vite-tsconfig-paths @vitest/coverage-v8
   - vite.config.ts
