@@ -4,7 +4,8 @@ import { defineConfig } from 'vitest/config'
 export default defineConfig({
   plugins: [tsconfigPaths()],
   test: {
-    exclude: ['**/node_modules/**', '**/build/**'],
+    environmentMatchGlobs: [['src/http/controllers/**', 'prisma']],
+    dir: 'src',
     coverage: {
       exclude: ['**/node_modules/**', '**/build/**'],
     },

@@ -82,3 +82,11 @@ Setup do projeto
 - Setup for JWT Auth
   - npm i @fastify/jwt
   - env and app.js chore
+- Setup for Vitest Testing Environments
+  - Create /prisma/vitest-environment-prisma
+  - On /prisma/vitest-environment-prisma:
+    - run npm init -y
+    - change the main for prisma-test-environment.ts
+    - run npm link
+  - Back on root dir
+    - run npm link vitest-environment-prisma
