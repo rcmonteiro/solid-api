@@ -5,9 +5,13 @@ Projeto para praticar conceitos SOLID na criação de uma API Node.js
 Para implementar os 5 princípios do SOLID, foram feitas estas decisões de design patterns:
 
 **Single-responsibility**
+- 
 **Open–closed**
+- 
 **Liskov substitution**
+- 
 **Interface segregation**
+- 
 **Dependency inversion**
 - Os controllers ficam responsáveis de instanciar os use cases passando as dependências, assim podemos focar em criar repositórios genéricos que vão forçar os repositórios de dependência seguirem as regras do jogo, deixando todo o código bem independente em termos de regras de negócio dos casos de uso, que nesta versão da API, por ser algo bem simplificado, ficou como uma simples interface mesmo, mas poderia ser uma classe abstrata.
 
@@ -19,21 +23,21 @@ GymPass style app.
 ## RFs (Requisitos funcionais)
 
 - [x] Deve ser possível se cadastrar;
-- [ ] Deve ser possível se autenticar;
-- [ ] Deve ser possível obter o perfil de um usuário logado;
+- [x] Deve ser possível se autenticar;
+- [x] Deve ser possível obter o perfil de um usuário logado;
 - [ ] Deve ser possível obter o número de check-ins realizados pelo usuário logado;
 - [ ] Deve ser possível o usuário obter o seu histórico de check-ins;
 - [ ] Deve ser possível o usuário buscar academias próximas (até 10km);
 - [ ] Deve ser possível o usuário buscar academias pelo nome;
-- [ ] Deve ser possível o usuário realizar check-in em uma academia;
+- [x] Deve ser possível o usuário realizar check-in em uma academia;
 - [ ] Deve ser possível validar o check-in de um usuário;
-- [ ] Deve ser possível cadastrar uma academia;
+- [x] Deve ser possível cadastrar uma academia;
 
 ## RNs (Regras de negócio)
 
 - [x] O usuário não deve poder se cadastrar com um e-mail duplicado;
-- [ ] O usuário não pode fazer 2 check-ins no mesmo dia;
-- [ ] O usuário não pode fazer check-in se não estiver perto (100m) da academia;
+- [x] O usuário não pode fazer 2 check-ins no mesmo dia;
+- [x] O usuário não pode fazer check-in se não estiver perto (100m) da academia;
 - [ ] O check-in só pode ser validado até 20 minutos após ser criado;
 - [ ] O check-in só pode ser validado por administradores;
 - [ ] A academia só pode ser cadastrada por administradores;
@@ -72,3 +76,4 @@ Setup do projeto
 - Setup Vitest
   - npm install -D vitest vite-tsconfig-paths @vitest/coverage-v8
   - vite.config.ts
+- Criadas as rotas de autenticação
