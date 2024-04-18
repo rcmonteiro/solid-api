@@ -52,7 +52,7 @@ GymPass style app.
 # Project Timeline
 
 Setup do projeto
-- create .npmrc file with `save-exact=true` 
+- Create .npmrc file with `save-exact=true` 
   - [todo] Someday, test an upgrade automation with [renovate](https://github.com/renovatebot/renovate)
 - npm i typescript @types/node tsx tsup -D
 - npx tsc --init
@@ -76,4 +76,9 @@ Setup do projeto
 - Setup Vitest
   - npm install -D vitest vite-tsconfig-paths @vitest/coverage-v8
   - vite.config.ts
-- Criadas as rotas de autenticação
+- Create use cases and tests, using TDD methodology
+- Create factories for repo dependencies in use-cases inside controllers
+- Create controllers
+- Setup for JWT Auth
+  - npm i @fastify/jwt
+  - env and app.js chore
