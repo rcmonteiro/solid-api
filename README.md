@@ -49,6 +49,19 @@ GymPass style app.
 - [x] Todas listas de dados precisam estar paginadas com 20 itens por página;
 - [ ] O usuário deve ser identificado por um JWT (JSON Web Token);
 
+# Cobertura de testes
+
+- Testes unitários em todos os use cases, usando banco de dados em memória
+- Testes e2e em todas as rotas, usando um banco de dados isolado
+
+```sh
+------------------|---------|----------|---------|---------|
+File              | % Stmts | % Branch | % Funcs | % Lines |
+------------------|---------|----------|---------|---------|
+All files         |   95.51 |    89.93 |   96.51 |   95.51 |                   
+------------------|---------|----------|---------|---------|
+```
+
 # Project Timeline
 
 Setup do projeto

@@ -17,6 +17,7 @@ export class PrismaGymsRepository implements GymsRepository {
       where: {
         title: {
           contains: query,
+          mode: 'insensitive',
         },
       },
       take: 20,
@@ -33,19 +34,7 @@ export class PrismaGymsRepository implements GymsRepository {
       FROM 
         gyms
       WHERE 
-        ( 
-          6371 * 
-          acos( 
-            cos( radians(${latitude}) ) * 
-            cos( radians(${latitude}) ) * 
-            cos( radians( latitude ) ) * 
-            cos( 
-              radians( longitude ) - radians(${longitude}) 
-            ) + 
-            sin( radians(${latitude}) ) * 
-            sin( radians( latitude ) ) 
-          ) 
-        ) <= 10
+      ( 6371 * acos( cos( radians(${latitude}) ) * cos( radians( latitude ) ) * cos( radians( longitude ) - radians(${longitude}) ) + sin( radians(${latitude}) ) * sin( radians( latitude ) ) ) ) <= 10
     `
     return gyms
   }
