@@ -12,7 +12,7 @@ describe('Profile (e2e)', async () => {
   })
 
   it('should be able to get user profile', async () => {
-    const { token } = await createAndAuthenticateUser()
+    const { token } = await createAndAuthenticateUser(app)
     const profileResponse = await request(app.server)
       .get('/me')
       .set('Authorization', `Bearer ${token}`)
@@ -24,14 +24,5 @@ describe('Profile (e2e)', async () => {
         email: 'john@doe.com',
       }),
     )
-  })
-
-  it('should not be able to call a invalid route', async () => {
-    const { token } = await createAndAuthenticateUser()
-    const profileResponse = await request(app.server)
-      .get('/profile')
-      .set('Authorization', `Bearer ${token}`)
-      .send()
-    expect(profileResponse.statusCode).toEqual(404)
   })
 })

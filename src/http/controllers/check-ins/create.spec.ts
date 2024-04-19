@@ -13,7 +13,7 @@ describe('Check-in (e2e)', async () => {
   })
 
   it('should be able to check in', async () => {
-    const { token } = await createAndAuthenticateUser()
+    const { token } = await createAndAuthenticateUser(app)
 
     const { id: gymId } = await prisma.gym.create({
       data: {

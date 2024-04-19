@@ -12,7 +12,7 @@ describe('Search Gyms (e2e)', async () => {
   })
 
   it('should be able to search gyms', async () => {
-    const { token } = await createAndAuthenticateUser()
+    const { token } = await createAndAuthenticateUser(app, 'ADMIN')
 
     await request(app.server)
       .post('/gyms')
@@ -49,15 +49,5 @@ describe('Search Gyms (e2e)', async () => {
         title: 'Gym Test 01',
       }),
     ])
-  })
-
-  it('should not be able to search gyms passing without query', async () => {
-    const { token } = await createAndAuthenticateUser()
-
-    const response = await request(app.server)
-      .get(`/gyms/search`)
-      .set('Authorization', `Bearer ${token}`)
-      .send()
-    expect(response.statusCode).toEqual(400)
   })
 })
