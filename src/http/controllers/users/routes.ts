@@ -11,5 +11,15 @@ export const userRoutes = async (app: FastifyInstance) => {
 
   app.patch('/token/refresh', refresh)
 
-  app.get('/me', { onRequest: [verifyJwt] }, profile)
+  app.get(
+    '/me',
+    {
+      schema: {
+        summary: 'Get user profile',
+        tags: ['User'],
+      },
+      onRequest: [verifyJwt],
+    },
+    profile,
+  )
 }

@@ -116,5 +116,6 @@ Setup do projeto
   - Back on root dir
     - run npm link vitest-environment-prisma
 - Setup CI/CD
-  - CI: run all unit tests on every push on github using github actions
-- 
+  - run all unit tests on every push on github using github actions
+  - run all ee2 tests on every pull request on github using github actions
+- API documentation with Swagger

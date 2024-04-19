@@ -19,6 +19,8 @@
   "author": "rcmonteiro",
   "license": "MIT",
   "devDependencies": {
+    "@fastify/swagger": "8.14.0",
+    "@fastify/swagger-ui": "3.0.0",
     "@rocketseat/eslint-config": "2.2.2",
     "@types/bcryptjs": "2.4.6",
     "@types/node": "20.12.7",
@@ -36,12 +38,14 @@
   },
   "dependencies": {
     "@fastify/cookie": "9.3.1",
+    "@fastify/cors": "9.0.1",
     "@fastify/jwt": "8.0.0",
     "@prisma/client": "5.12.1",
     "bcryptjs": "2.4.3",
     "dayjs": "1.11.10",
     "dotenv": "16.4.5",
     "fastify": "4.26.2",
+    "fastify-type-provider-zod": "1.1.9",
     "zod": "3.22.4"
   }
 }
