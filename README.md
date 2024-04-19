@@ -57,7 +57,7 @@ Rodando todos os testes unitários com Github Actions a cada push:
 ![unit-tests](./docs/images/unit-tests.png)
 
 Rodando todos os testes e2e com Github Actions a cada PR:
-![unit-tests](./docs/images/unit-tests.png)
+![unit-tests](./docs/images/e2e-tests.png)
 
 ### Cobertura
 
