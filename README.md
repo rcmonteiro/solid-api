@@ -62,6 +62,9 @@ All files         |   95.51 |    89.93 |   96.51 |   95.51 |
 ------------------|---------|----------|---------|---------|
 ```
 
+- Rodando com Github Actions a cada push, todos os testes unitários:
+![unit-tests](./docs/images/unit-tests.png)
+
 # Project Timeline
 
 Setup do projeto
@@ -105,3 +108,4 @@ Setup do projeto
     - run npm link vitest-environment-prisma
 - Setup CI/CD
   - CI: run all unit tests on every push on github using github actions
+- 
