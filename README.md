@@ -49,7 +49,17 @@ GymPass style app.
 - [x] Todas listas de dados precisam estar paginadas com 20 itens por página;
 - [x] O usuário deve ser identificado por um JWT (JSON Web Token);
 
-# Cobertura de testes
+# Rodando testes
+
+### CI/CD
+
+Rodando todos os testes unitários com Github Actions a cada push:
+![unit-tests](./docs/images/unit-tests.png)
+
+Rodando todos os testes e2e com Github Actions a cada PR:
+![unit-tests](./docs/images/unit-tests.png)
+
+### Cobertura
 
 - Testes unitários em todos os use cases, usando banco de dados em memória
 - Testes e2e em todas as rotas, usando um banco de dados isolado
@@ -62,8 +72,7 @@ All files         |   95.51 |    89.93 |   96.51 |   95.51 |
 ------------------|---------|----------|---------|---------|
 ```
 
-- Rodando com Github Actions a cada push, todos os testes unitários:
-![unit-tests](./docs/images/unit-tests.png)
+
 
 # Project Timeline
 
