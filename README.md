@@ -61,14 +61,14 @@ Rodando todos os testes e2e com Github Actions a cada PR:
 
 ### Cobertura
 
-- Testes unitários em todos os use cases, usando banco de dados em memória
-- Testes e2e em todas as rotas, usando um banco de dados isolado
+- 22 Testes unitários em todos os use cases, usando banco de dados em memória
+- 14 Testes e2e em todas as rotas, usando um banco de dados isolado
 
 ```sh
 ------------------|---------|----------|---------|---------|
 File              | % Stmts | % Branch | % Funcs | % Lines |
 ------------------|---------|----------|---------|---------|
-All files         |   95.51 |    89.93 |   96.51 |   95.51 |                   
+All files         |   95.17 |    90.06 |   96.59 |   95.17 | 
 ------------------|---------|----------|---------|---------|
 ```
 

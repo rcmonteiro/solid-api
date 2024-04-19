@@ -22,6 +22,7 @@ app.register(fastifyJwt, {
   },
 })
 
+app.get('/health', () => ({ status: 'ok' }))
 app.register(userRoutes)
 app.register(gymRoutes)
 app.register(checkInRoutes)
